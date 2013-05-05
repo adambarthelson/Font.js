@@ -797,6 +797,29 @@
   /**
    * Bind to global scope
    */
-  window.Font = Font;
+  window['Font'] = Font;
+  /**
+   * Definitions for google closure compiler ADVANCED_OPTIMIZATION level
+   */
+  Font.prototype['url'] = Font.prototype.url;
+  Font.prototype['format'] = Font.prototype.format;
+  Font.prototype['data'] = Font.prototype.data;
+  Font.prototype['base64'] = Font.prototype.base64;
+  Font.prototype['metrics'] = Font.prototype.metrics;
+  Font.prototype['systemfont'] = Font.prototype.systemfont;
+  Font.prototype['loaded'] = Font.prototype.loaded;
+  Font.prototype['onload'] = Font.prototype.onload;
+  Font.prototype['onerror'] = Font.prototype.onerror;
+  Font.prototype['canvas'] = Font.prototype.canvas;
+  Font.prototype['context'] = Font.prototype.context;
+  Font.prototype['validate'] = Font.prototype.validate;
+  Font.prototype['ondownloaded'] = Font.prototype.ondownloaded;
+  Font.prototype['bootstrapValidation'] = Font.prototype.bootstrapValidation;
+  Font.prototype['processSystemFont'] = Font.prototype.processSystemFont;
+  Font.prototype['loadFont'] = Font.prototype.loadFont;
+  Font.prototype['styleNode'] = Font.prototype.styleNode;
+  Font.prototype['toStyleNode'] = Font.prototype.toStyleNode;
+  Font.prototype['measureText'] = Font.prototype.measureText;
+  Font.prototype['measureSegment'] = Font.prototype.measureSegment;
 
 }(window));
